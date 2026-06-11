@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KARPUZ COCKTAIL &amp; SPORTS BAR | Yalıkavak Marina</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Bebas+Neue&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#5c403d",
+                        "on-secondary-container": "#004d44",
+                        "on-secondary": "#003731",
+                        "tertiary-container": "#b48a22",
+                        "secondary": "#44e2cd",
+                        "on-primary-fixed-variant": "#930010",
+                        "on-surface": "#e5e1e4",
+                        "tertiary-fixed": "#ffdf9e",
+                        "surface-glass": "rgba(255, 255, 255, 0.05)",
+                        "primary-fixed-dim": "#ffb3ac",
+                        "outline": "#ab8885",
+                        "inverse-on-surface": "#313032",
+                        "background": "#131315",
+                        "on-secondary-fixed-variant": "#005047",
+                        "tertiary-fixed-dim": "#efc054",
+                        "surface-variant": "#353437",
+                        "on-tertiary-container": "#372700",
+                        "secondary-fixed-dim": "#3cddc7",
+                        "surface-bright": "#39393b",
+                        "on-error-container": "#ffdad6",
+                        "obsidian": "#0C0C0E",
+                        "tertiary": "#efc054",
+                        "on-surface-variant": "#e5bdb9",
+                        "on-primary": "#680008",
+                        "surface-container-highest": "#353437",
+                        "on-tertiary-fixed-variant": "#5b4300",
+                        "on-background": "#e5e1e4",
+                        "on-tertiary": "#402d00",
+                        "surface-tint": "#ffb3ac",
+                        "surface-container": "#201f21",
+                        "secondary-container": "#03c6b2",
+                        "error-container": "#93000a",
+                        "on-primary-fixed": "#410003",
+                        "error": "#ffb4ab",
+                        "inverse-primary": "#bc141e",
+                        "mint-green": "#2DD4BF",
+                        "primary-container": "#ff544e",
+                        "on-secondary-fixed": "#00201c",
+                        "secondary-fixed": "#62fae3",
+                        "on-primary-container": "#5c0006",
+                        "primary-fixed": "#ffdad6",
+                        "surface-container-lowest": "#0e0e10",
+                        "marina-gold": "#E8B94E",
+                        "primary": "#ffb3ac",
+                        "watermelon-red": "#E23434",
+                        "on-error": "#690005",
+                        "surface-container-low": "#1b1b1d",
+                        "inverse-surface": "#e5e1e4",
+                        "surface-container-high": "#2a2a2c",
+                        "on-tertiary-fixed": "#261a00",
+                        "surface-dim": "#131315",
+                        "surface": "#131315"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "stack-md": "16px",
+                        "gutter": "24px",
+                        "section-gap": "120px",
+                        "margin-desktop": "64px",
+                        "stack-sm": "8px",
+                        "stack-lg": "32px"
+                    },
+                    "fontFamily": {
+                        "subheadline-lg": ["Bebas Neue"],
+                        "headline-md": ["Anton"],
+                        "display-lg-mobile": ["Anton"],
+                        "display-lg": ["Anton"],
+                        "body-md": ["Inter"],
+                        "label-caps": ["Bebas Neue"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "subheadline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "0.05em", "fontWeight": "400" }],
+                        "headline-md": ["40px", { "lineHeight": "48px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "display-lg": ["80px", { "lineHeight": "90px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-caps": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-glow-red {
+            text-shadow: 0 0 20px rgba(226, 52, 52, 0.5);
+        }
+        .btn-glow-red:hover {
+            box-shadow: 0 0 20px rgba(226, 52, 52, 0.4);
+        }
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeIn 0.3s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-obsidian text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-watermelon-red selection:text-white">
+<!-- Navbar -->
+<nav class="fixed top-0 w-full z-50 h-20 bg-transparent backdrop-blur-md dark:bg-transparent bg-surface-glass border-b border-white/10 shadow-lg transition-all duration-300" id="navbar">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-full">
+<a class="flex items-center gap-3 font-headline-md text-headline-md text-on-surface tracking-tighter" href="#">
+<img alt="Karpuz Cocktail Bar logosu" class="h-12 w-auto object-contain drop-shadow-[0_8px_18px_rgba(0,0,0,.55)]" src="images/karpuz-logo-real.svg"/>
+<span class="text-white text-lg tracking-widest hidden md:inline-block relative top-1">YALIKAVAK</span>
+</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface hover:text-watermelon-red transition-colors" href="#hakkimizda">Hakkımızda</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-watermelon-red transition-colors" href="#menu">Menü</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-watermelon-red transition-colors" href="#galeri">Galeri</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-watermelon-red transition-colors" href="#iletisim">İletişim</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="text-on-surface hover:text-watermelon-red transition-colors hidden md:block" href="https://www.instagram.com/karpuzbodrum/" target="_blank">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+</a>
+<a class="bg-watermelon-red text-white font-label-caps text-label-caps px-6 py-2 rounded-full hover:bg-white hover:text-watermelon-red transition-all duration-300 btn-glow-red scale-95 active:scale-90 flex items-center gap-2" href="tel:+905325752361">
+                    REZERVE ET
+                </a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center justify-center pt-20">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-obsidian/20 via-obsidian/45 to-obsidian z-10"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-obsidian/70 via-obsidian/25 to-obsidian/20 z-10"></div>
+<img alt="Karpuz Yalıkavak dış oturma alanı ve marina atmosferi" class="w-full h-full object-cover object-center" src="images/marina-seating.jpg"/>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto flex flex-col items-center gap-stack-lg">
+<img alt="Karpuz Cocktail Bar logosu" class="w-60 md:w-80 h-auto object-contain drop-shadow-[0_16px_35px_rgba(0,0,0,.75)]" src="images/karpuz-logo-real.svg"/>
+<div class="flex items-center gap-2 text-mint-green font-label-caps text-label-caps tracking-widest">
+<span>YALIKAVAK MARİNA</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-watermelon-red animate-pulse"></span> CANLI MAÇ</span>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-white uppercase tracking-tighter leading-none text-glow-red flex flex-col items-center">
+<span class="text-watermelon-red">KARPUZ</span>
+<span>COCKTAIL &amp; SPORTS BAR</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Bodrum'un sevilen Karpuz Bar'ı şimdi Yalıkavak Marina'da. İmza kokteyller, buz gibi içecekler, dev ekranda canlı maç ve eşsiz deniz manzarası.
+            </p>
+<div class="flex flex-wrap justify-center gap-4 mt-stack-md">
+<a class="bg-watermelon-red text-white font-subheadline-lg text-subheadline-lg px-8 py-3 rounded-full hover:bg-white hover:text-watermelon-red transition-all duration-300 btn-glow-red" href="#menu">
+                    MENÜYÜ GÖR
+                </a>
+<a class="bg-transparent border border-mint-green text-white font-subheadline-lg text-subheadline-lg px-8 py-3 rounded-full hover:bg-mint-green hover:text-obsidian transition-all duration-300" href="https://www.google.com/maps/search/?api=1&amp;query=Karpuz+Bar+Yalıkavak" target="_blank">
+                    YOL TARİFİ
+                </a>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce opacity-70">
+<span class="font-label-caps text-label-caps text-on-surface-variant">KAYDIR</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</header>
+<!-- Marquee -->
+<div class="w-full bg-watermelon-red py-3 text-white font-label-caps text-label-caps tracking-widest marquee-container border-y border-white/10">
+<div class="marquee-content flex gap-8">
+<span>COCKTAILS ★ CANLI MAÇ ★ beIN SPORTS ★ DENİZ MANZARASI ★ MOJITO ★ FROZEN ★ MARİNA ★ COCKTAILS ★ CANLI MAÇ ★ beIN SPORTS ★ DENİZ MANZARASI ★ MOJITO ★ FROZEN ★ MARİNA ★</span>
+<span>COCKTAILS ★ CANLI MAÇ ★ beIN SPORTS ★ DENİZ MANZARASI ★ MOJITO ★ FROZEN ★ MARİNA ★ COCKTAILS ★ CANLI MAÇ ★ beIN SPORTS ★ DENİZ MANZARASI ★ MOJITO ★ FROZEN ★ MARİNA ★</span>
+</div>
+</div>
+<!-- Features -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="glass-panel p-8 rounded-xl flex flex-col gap-4 hover:-translate-y-2 transition-transform duration-300 group">
+<div class="w-12 h-12 rounded-full border border-watermelon-red/30 flex items-center justify-center text-watermelon-red group-hover:bg-watermelon-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_bar</span>
+</div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-white">İmza Kokteyller</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Passionate Lady, Mudslide Martini, Long Island ve daha fazlası — barmen elinden taze.</p>
+</div>
+<div class="glass-panel p-8 rounded-xl flex flex-col gap-4 hover:-translate-y-2 transition-transform duration-300 group relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="flex items-center gap-1 text-xs text-mint-green font-bold"><span class="w-2 h-2 rounded-full bg-mint-green animate-pulse"></span> LIVE</span>
+</div>
+<div class="w-12 h-12 rounded-full border border-mint-green/30 flex items-center justify-center text-mint-green group-hover:bg-mint-green group-hover:text-obsidian transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">live_tv</span>
+</div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-white">Canlı Maç · beIN Sports</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Tüm büyük maçlar dev ekranda. Takımını tut, kadehini kaldır, maçı kaçırma.</p>
+</div>
+<div class="glass-panel p-8 rounded-xl flex flex-col gap-4 hover:-translate-y-2 transition-transform duration-300 group">
+<div class="w-12 h-12 rounded-full border border-marina-gold/30 flex items-center justify-center text-marina-gold group-hover:bg-marina-gold group-hover:text-obsidian transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">sailing</span>
+</div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-white">Marina Manzarası</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Yatların arasında, hasır gölgelik altında; Yalıkavak Marina'nın tam kalbinde.</p>
+</div>
+</div>
+</section>
+<!-- About -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative" id="hakkimizda">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative h-[600px] w-full rounded-2xl overflow-hidden glass-panel group">
+<img alt="Karpuz Yalıkavak dış oturma ve marina alanı" class="w-full h-full object-cover object-center absolute inset-0 transition-transform duration-700 group-hover:scale-105" src="images/patio-lounge.jpg"/>
+<div class="absolute -bottom-10 -right-10 w-2/3 h-2/3 rounded-2xl overflow-hidden border-4 border-obsidian z-10 shadow-2xl">
+<img alt="Karpuz Yalıkavak maç yayını ekranı" class="w-full h-full object-cover object-center" src="images/sports-screen.jpg"/>
+</div>
+</div>
+<div class="flex flex-col gap-stack-lg">
+<div>
+<span class="font-label-caps text-label-caps text-watermelon-red tracking-widest">HAKKINDA</span>
+<h2 class="font-headline-md text-headline-md text-white uppercase mt-2">
+                        BODRUM'UN KARPUZ'U <br/> <span class="text-watermelon-red">YALIKAVAK'TA</span>
+</h2>
+</div>
+<p class="font-body-lg text-body-lg text-marina-gold italic">
+                    "Aynı lezzet, aynı keyif — şimdi marinanın kıyısında."
+                </p>
+<div class="flex flex-col gap-stack-md text-on-surface-variant font-body-md text-body-md">
+<p>Bodrum merkezde yıllardır sevilen Karpuz Cocktail Bar, ikinci şubesiyle Yalıkavak Marina'da. Sabah kahvesinden gece kokteyline, büyük maçtan deniz manzaralı keyfe kadar günün her saatine açık.</p>
+<p>Hasır gölgelikler, rattan koltuklar, yatların manzarası ve barın arkasında taze sıkım meyvelerle hazırlanan kokteyller. Yalıkavak'ta buluşma noktanız.</p>
+</div>
+<div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10">
+<div>
+<span class="block font-headline-md text-headline-md text-watermelon-red">2.</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">ŞUBE</span>
+</div>
+<div>
+<span class="block font-headline-md text-headline-md text-watermelon-red">10:00</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">AÇILIŞ</span>
+</div>
+<div>
+<span class="block font-headline-md text-headline-md text-watermelon-red">04:00</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">KAPANIŞ</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative bg-surface-container-lowest rounded-3xl border border-white/5" id="menu">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-caps text-label-caps text-watermelon-red tracking-widest">MENÜ</span>
+<h2 class="font-headline-md text-headline-md text-white uppercase mt-2">
+                İÇ, İZLE, <span class="text-watermelon-red text-glow-red">KEYFİNE BAK</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4">Kokteyllerden import içkilere, kahveden frozen'a — Karpuz'un tam kartı.</p>
+</div>
+<!-- Tabs -->
+<div class="flex flex-wrap justify-center gap-2 mb-12 border-b border-white/10 pb-4">
+<button class="menu-tab px-6 py-2 rounded-full font-label-caps text-label-caps transition-all bg-watermelon-red text-white btn-glow-red" data-target="tab-kokteyl">KOKTEYLLER</button>
+<button class="menu-tab px-6 py-2 rounded-full font-label-caps text-label-caps transition-all text-on-surface-variant hover:text-white hover:bg-white/5" data-target="tab-import">IMPORT &amp; VİSKİ</button>
+<button class="menu-tab px-6 py-2 rounded-full font-label-caps text-label-caps transition-all text-on-surface-variant hover:text-white hover:bg-white/5" data-target="tab-bira">BİRA &amp; ŞARAP</button>
+<button class="menu-tab px-6 py-2 rounded-full font-label-caps text-label-caps transition-all text-on-surface-variant hover:text-white hover:bg-white/5" data-target="tab-kahve">KAHVE &amp; SOFT</button>
+</div>
+<!-- Tab Contents -->
+<div class="tab-content active" id="tab-kokteyl">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+<div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-6 border-b border-white/10 pb-2">İmza Kokteyller</h3>
+<ul class="flex flex-col gap-4">
+<li class="flex justify-between items-baseline border-b border-white/5 pb-2">
+<span><strong class="font-body-md text-white block">Passionate Lady</strong><small class="text-on-surface-variant italic">vodka · apple liqueur · orange · lime · passion puree</small></span>
+
+</li>
+<li class="flex justify-between items-baseline border-b border-white/5 pb-2">
+<span><strong class="font-body-md text-white block">Kiss The Wild Berry</strong><small class="text-on-surface-variant italic">vodka · passion liqueur · pineapple · lime · berry puree</small></span>
+
+</li>
+<li class="flex justify-between items-baseline border-b border-white/5 pb-2">
+<span><strong class="font-body-md text-white block">Mango Tai</strong><small class="text-on-surface-variant italic">bacardi · bacardi black · cointreau · orange · basil · mango puree</small></span>
+
+</li>
+<li class="flex justify-between items-baseline border-b border-white/5 pb-2">
+<span><strong class="font-body-md text-white block">Libido</strong><small class="text-on-surface-variant italic">gin · cucumber · garden lemon · mint · sugar · tonic</small></span>
+
+</li>
+<li class="flex justify-between items-baseline border-b border-white/5 pb-2">
+<span><strong class="font-body-md text-white block">Lost Paradise</strong><small class="text-on-surface-variant italic">vodka · cointreau · orange · grapefruit · lemon · mango</small></span>
+
+</li>
+<li class="flex justify-between items-baseline border-b border-white/5 pb-2">
+<span><strong class="font-body-md text-white block">Tropical Gang Bang</strong><small class="text-on-surface-variant italic">tequila blanco · orange liqueur · safari · orange · passion</small></span>
+
+</li>
+<li class="flex justify-between items-baseline border-b border-white/5 pb-2">
+<span><strong class="font-body-md text-white block">Summer Energy</strong><small class="text-on-surface-variant italic">bacardi · absolut mandarin · hibiscus tea · strawberry puree</small></span>
+
+</li>
+<li class="flex justify-between items-baseline border-b border-white/5 pb-2">
+<span><strong class="font-body-md text-white block">Pineapple Breeze</strong><small class="text-on-surface-variant italic">bacardi · batida coco · coconut ice cream · pineapple · blue curacao</small></span>
+
+</li>
+<li class="flex justify-between items-baseline border-b border-white/5 pb-2">
+<span><strong class="font-body-md text-white block">Mudslide Martini</strong><small class="text-on-surface-variant italic">baileys · vodka · kahlua · chocolate liqueur · vanilla ice cream · milk</small></span>
+
+</li>
+<li class="flex justify-between items-baseline border-b border-white/5 pb-2">
+<span><strong class="font-body-md text-white block">Spring In Her</strong><small class="text-on-surface-variant italic">vodka · tequila · orange · lime · raspberry puree</small></span>
+
+</li>
+</ul>
+</div>
+<div class="flex flex-col gap-8">
+<div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-6 border-b border-white/10 pb-2">Klasik Kokteyller</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Pornstar Martini</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Piña Colada</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Cosmopolitan</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Long Island Ice Tea</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Margarita</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Espresso Martini</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Baileys Espresso Martini</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Negroni</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Old Fashioned</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Bloody Mary</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Coco Loco</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Pimm's Cup</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Aperol Spritz</span></li>
+</ul>
+</div>
+<div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-4 border-b border-white/10 pb-2">Mojito</h3>
+<ul class="flex flex-col gap-2">
+<li class="flex justify-between items-baseline">
+<span class="font-body-md text-white">Classic Mojito</span>
+</li>
+<li class="flex justify-between items-baseline">
+<span class="font-body-md text-white">Passion Mojito</span>
+</li>
+<li class="flex justify-between items-baseline">
+<span class="font-body-md text-white">Virgin Mojito</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-4 border-b border-white/10 pb-2">Frozen</h3>
+<div class="flex justify-between gap-4">
+<p class="font-body-md text-white">Strawberry · Raspberry · Redberries · Melon · Apple · Mango · Passion</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-content" id="tab-import">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+<div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-6 border-b border-white/10 pb-2">Import İçkiler</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Belvedere</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Grey Goose</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Smirnoff</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Absolut</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Bacardi</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Bombay</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Gordon · Pink Gin</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Tanqueray Gin · Orange Gin</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Malibu · Archers · Baileys · Safari</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Amaretto</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Southern Comfort</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Absolut Raspberri</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Hennessy</span></li>
+</ul>
+</div>
+<div class="flex flex-col gap-8">
+<div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-6 border-b border-white/10 pb-2">Viski</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Jack Daniels · Honey</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Chivas Regal</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Jameson</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">J&amp;B</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Black Label</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Red Label</span></li>
+</ul>
+</div>
+<div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-6 border-b border-white/10 pb-2">Shots</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">B-52</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Quick Fuck</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Baby Gunies</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Jäger Bomb · Safari Bomb</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Tequila · Sambuca · Skitter Bomb</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-content" id="tab-bira">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+<div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-6 border-b border-white/10 pb-2">Biralar</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Efes 50cl · Tuborg 50cl · Bomonti · Carlsberg · Bud</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Becks · Miller · Amsterdam</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Heineken · Corona · Strongbow · Desperados · Guinness · Magners</span></li>
+</ul>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-6 mt-8 border-b border-white/10 pb-2">Yerli İçkiler</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Vodka · Gin · Brandy</span></li>
+</ul>
+</div>
+<div class="flex flex-col gap-8">
+<div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-6 border-b border-white/10 pb-2">Şarap (Kadeh)</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Kırmızı · Beyaz · Rose</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Prosecco</span></li>
+</ul>
+</div>
+<div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-6 border-b border-white/10 pb-2">Şişe</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Prosecco</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Angora (red · white · rose)</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Moët</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Martini Prosecco · Jack Daniels 70cl · Absolut Vodka</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-content" id="tab-kahve">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+<div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-6 border-b border-white/10 pb-2">Kahve</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Espresso · Türk Kahvesi</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Americano</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Cafe Latte · Cappuccino</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Frappuccinos · Caramel Latte · Ice Americano</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Türk Çayı</span></li>
+</ul>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-6 mt-8 border-b border-white/10 pb-2">Alkollü Kahve</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Irish Coffee · Baileys Coffee · French Coffee</span></li>
+</ul>
+</div>
+<div class="flex flex-col gap-8">
+<div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-6 border-b border-white/10 pb-2">Soft Drinks</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Su 0,5L</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Maden Suyu</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Cola · Fanta · Sprite · Ice Tea · Meyve Suları</span></li>
+<li class="flex justify-between border-b border-white/5 pb-2"><span class="font-body-md text-white">Redbull</span></li>
+<li class="flex justify-between items-baseline border-b border-white/5 pb-2"><span><strong class="font-body-md text-white block">Fresh Juice</strong><small class="text-on-surface-variant italic">passion · orange · mango · apple · melon</small></span></li>
+</ul>
+</div>
+<div>
+<h3 class="font-subheadline-lg text-subheadline-lg text-marina-gold mb-6 border-b border-white/10 pb-2">Frozen Soft</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex justify-between items-baseline border-b border-white/5 pb-2"><span><strong class="font-body-md text-white block">Milkshake</strong><small class="text-on-surface-variant italic">chocolate · strawberry · vanilla</small></span></li>
+<li class="flex justify-between items-baseline border-b border-white/5 pb-2"><span><strong class="font-body-md text-white block">Ice Slush</strong><small class="text-on-surface-variant italic">strawberry · blueberry · raspberry · apple</small></span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12 text-xs text-on-surface-variant italic">
+            Menü sezon içinde güncellenebilir.
+        </div>
+</section>
+<!-- Gallery Bento Grid -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="galeri">
+<div class="text-center mb-12">
+<span class="font-label-caps text-label-caps text-watermelon-red tracking-widest">GALERİ</span>
+<h2 class="font-headline-md text-headline-md text-white uppercase mt-2">
+                MARİNANIN <span class="text-watermelon-red text-glow-red">KALBİNDEN</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4">Daha fazlası Instagram'da — <a class="text-white hover:text-watermelon-red transition-colors" href="https://www.instagram.com/karpuzbodrum/">@karpuzbodrum</a></p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[250px]">
+<div class="md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden glass-panel group">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/marina-seating.jpg"/>
+</div>
+<div class="md:col-span-1 md:row-span-1 rounded-2xl overflow-hidden glass-panel group">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/patio-lounge.jpg"/>
+</div>
+<div class="md:col-span-1 md:row-span-2 rounded-2xl overflow-hidden glass-panel group">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/inside-screen.jpg"/>
+</div>
+<div class="md:col-span-1 md:row-span-1 rounded-2xl overflow-hidden glass-panel group">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/bar-wide.jpg"/>
+</div>
+<div class="md:col-span-1 md:row-span-1 rounded-2xl overflow-hidden glass-panel group">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/entrance-view.jpg"/>
+</div>
+<div class="md:col-span-1 md:row-span-1 rounded-2xl overflow-hidden glass-panel group bg-obsidian flex items-center justify-center border border-white/10 hover:border-watermelon-red/50 transition-colors">
+<a class="text-center flex flex-col items-center gap-2 group-hover:text-watermelon-red transition-colors" href="https://www.instagram.com/karpuzbodrum/" target="_blank">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+<span class="font-label-caps text-label-caps">TÜMÜNÜ GÖR</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Contact & Footer -->
+<section class="mt-section-gap border-t border-white/5" id="iletisim">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-16">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<!-- Info -->
+<div class="flex flex-col gap-8">
+<div>
+<h2 class="font-headline-md text-headline-md text-white uppercase">
+                            BİZİ <span class="text-watermelon-red text-glow-red">ZİYARET ET</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-md">
+                            Yalıkavak Marina'da, yatların yanında. Maç günleri için masanı önceden ayırt; gece keyfi için sadece gel.
+                        </p>
+</div>
+<div class="flex gap-4">
+<a class="bg-watermelon-red text-white font-label-caps text-label-caps px-6 py-3 rounded-full hover:bg-white hover:text-watermelon-red transition-all duration-300 btn-glow-red flex items-center gap-2" href="tel:+905325752361">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">call</span>
+                            HEMEN ARA
+                        </a>
+<a class="glass-panel text-white font-label-caps text-label-caps px-6 py-3 rounded-full hover:bg-white/10 transition-all duration-300 flex items-center gap-2" href="https://www.google.com/maps/search/?api=1&amp;query=Karpuz+Bar+Yalıkavak+Bodrum" target="_blank">
+<span class="material-symbols-outlined text-sm">map</span>
+                            HARİTADA AÇ
+                        </a>
+</div>
+</div>
+<!-- Details -->
+<div class="glass-panel rounded-2xl p-8 flex flex-col gap-6">
+<a class="flex gap-4 items-start group" href="https://www.google.com/maps/search/?api=1&amp;query=Yalıkavak+6852+Cad+No+29+Bodrum" target="_blank">
+<div class="w-10 h-10 rounded-full bg-watermelon-red/10 text-watermelon-red flex items-center justify-center flex-shrink-0 group-hover:bg-watermelon-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-white mb-1">Adres</h4>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-white transition-colors">Yalıkavak Mah. 6852 Cad. No:29, Yalıkavak / Bodrum</p>
+</div>
+</a>
+<a class="flex gap-4 items-start group" href="tel:+905325752361">
+<div class="w-10 h-10 rounded-full bg-watermelon-red/10 text-watermelon-red flex items-center justify-center flex-shrink-0 group-hover:bg-watermelon-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">phone</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-white mb-1">Telefon</h4>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-white transition-colors">0532 575 23 61</p>
+</div>
+</a>
+<a class="flex gap-4 items-start group" href="https://www.instagram.com/karpuzbodrum/" target="_blank">
+<div class="w-10 h-10 rounded-full bg-watermelon-red/10 text-watermelon-red flex items-center justify-center flex-shrink-0 group-hover:bg-watermelon-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-white mb-1">Instagram</h4>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-white transition-colors">@karpuzbodrum</p>
+</div>
+</a>
+<div class="flex gap-4 items-start">
+<div class="w-10 h-10 rounded-full bg-watermelon-red/10 text-watermelon-red flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">schedule</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-white mb-1">Çalışma Saatleri</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Her gün · 10:00 — 04:00</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Bottom -->
+<footer class="bg-obsidian w-full py-stack-lg border-t border-outline-variant mt-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tighter">
+<span class="text-watermelon-red">KARPUZ</span> YALIKAVAK
+                    </span>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Cocktail &amp; Sports Bar · Yalıkavak Marina. Bodrum'un sevilen Karpuz Bar'ının ikinci şubesi.</p>
+</div>
+<div class="flex flex-col gap-2">
+<h5 class="font-label-caps text-label-caps text-white mb-2">Menü</h5>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-watermelon-red transition-colors w-fit" href="#hakkimizda">Hakkında</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-watermelon-red transition-colors w-fit" href="#menu">Menü</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-watermelon-red transition-colors w-fit" href="#galeri">Galeri</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-watermelon-red transition-colors w-fit" href="#iletisim">İletişim</a>
+</div>
+<div class="flex flex-col gap-2">
+<h5 class="font-label-caps text-label-caps text-white mb-2">İletişim</h5>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-watermelon-red transition-colors w-fit" href="tel:+905325752361">0532 575 23 61</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-watermelon-red transition-colors w-fit" href="https://www.instagram.com/karpuzbodrum/">@karpuzbodrum</a>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-2">Yalıkavak Mah. 6852 Cad. No:29, Bodrum</p>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mt-12 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant text-xs">© 2026 Karpuz Yalıkavak - Tüm hakları saklıdır.</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs">Her gün · 10:00 — 04:00</p>
+</div>
+</footer>
+</section>
+<script>
+        // Navbar blur effect on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-obsidian/80');
+                nav.classList.remove('bg-transparent');
+            } else {
+                nav.classList.remove('bg-obsidian/80');
+                nav.classList.add('bg-transparent');
+            }
+        });
+
+        // Tab functionality
+        const tabs = document.querySelectorAll('.menu-tab');
+        const contents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active from all tabs
+                tabs.forEach(t => {
+                    t.classList.remove('bg-watermelon-red', 'text-white', 'btn-glow-red');
+                    t.classList.add('text-on-surface-variant', 'hover:text-white', 'hover:bg-white/5');
+                });
+                // Add active to clicked tab
+                tab.classList.remove('text-on-surface-variant', 'hover:text-white', 'hover:bg-white/5');
+                tab.classList.add('bg-watermelon-red', 'text-white', 'btn-glow-red');
+
+                // Hide all contents
+                contents.forEach(c => c.classList.remove('active'));
+                
+                // Show target content
+                const targetId = tab.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    </script>
+</body></html>
